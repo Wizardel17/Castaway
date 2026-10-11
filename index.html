@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./index.js" type="module" defer></script>
     <title>Castaway</title>
 </head>
 <body>
@@ -16,9 +17,9 @@
         <nav class="header__nav">
             <ul class="header__nav__list">
                 <li class="header__nav__list--item"><a href="#">Home</a></li>
-                <li class="header__nav__list--item"><a href="#">Episode</a></li>
+                <li class="header__nav__list--item"><a href="#">Episodes</a></li>
                 <li class="header__nav__list--item"><a href="#">About</a></li>
-                <li class="header__nav__list--item"><a href="#">Episode</a></li>
+                <li class="header__nav__list--item"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -68,8 +69,9 @@
             <div class="container">
                 <div class="episodes__info">
                     <div class="episodes__info__text">Latest Episodes</div>
-                    <div class="episodes__info__button">View all episodes</div>
+                    <button class="episodes__info__button defaultStylesBtn hidden">View all episodes</button>
                 </div>
+                <div class="episodes__allEpisodes"></div>
             </div>
         </section>
     </main>
