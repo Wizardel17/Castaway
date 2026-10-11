@@ -22,8 +22,19 @@ a {
 }
 
 .container {
-    padding-inline: 20px;
-    max-width: 1340px;
+    padding-inline: 55px;
+    max-width: 1280px;
+}
+
+.defaultStylesBtn {
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    outline: 0;
+    background-color: #118DA8;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Шапка */
@@ -48,7 +59,6 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    padding-inline: 35px;
 }
 
 .welcome__about__text {
@@ -73,4 +83,70 @@ a {
     display: flex;
     gap: 15px;
     padding-top: 15px;
+}
+
+/* Эпизоды-секция */
+
+.episodes {
+    padding-top: 90px
+}
+
+.episodes__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.episodes__info__text, .episode__about__title {
+    font-size: 64px;
+    letter-spacing: 3px;
+}
+
+.episodes__info__button {
+    width: 170px;
+    height: 50px;
+    padding: 12px 15px;
+}
+
+.episodes__allEpisodes {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse
+}
+
+.episode {
+    display: flex;
+    gap: 55px;
+    width: 1200px;
+    height: 460px;
+    padding: 40px;
+    margin-block: 40px;
+    background-color: #000000;
+    border-radius: 32px;
+}
+
+.episode__about__info {
+    width: fit-content;
+    padding: 8px 16px;
+    text-align: center;
+    background-color: #191919;
+    border-radius: 5px;
+}
+
+.episode__about__number {
+    margin-top: 50px;
+    color: #118DA8
+}
+
+.episode__about__text {
+    margin-top: 30px;
+    font-size: 22px;
+    opacity: 0.7
+}
+
+.episode__about__btn {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    padding: 12px 15px;
 }
