@@ -1,10 +1,14 @@
-import episodes from './base.js'
+import episodes, { stars, reviews} from './base.js'
 
 //  Получение
 
 const getViewBtn = document.querySelector('.episodes__info__button')
 const getSectionEpisodes = document.querySelector('.episodes')
 const getContainerEpisodes = getSectionEpisodes.querySelector('.episodes__allEpisodes')
+const getSectionReviews = document.querySelector('.reviews')
+const getContainerReviews = getSectionReviews.querySelector('.reviews__container')
+
+//  Обработчики событий
 
 getViewBtn.addEventListener('click', () => {
     if (getViewBtn.classList.contains('hidden')) {
@@ -30,3 +34,36 @@ getViewBtn.addEventListener('click', () => {
         getContainerEpisodes.innerHTML = ''
     }
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    createCard()
+})
+
+//  Функции
+
+function createCard() {
+    for (let review of reviews) {
+        getContainerReviews.insertAdjacentHTML('beforeend', 
+                `<div class="reviews__card">
+                        <div class="reviews__card__imgStars">
+                            <img src="${stars.img1x}" 
+                                srcset="${stars.img2x}"
+                                alt="Icon star" width="18" height="18">
+                            <img src="${stars.img1x}" 
+                                srcset="${stars.img2x}"
+                                alt="Icon star" width="18" height="18">
+                            <img src="${stars.img1x}" 
+                                srcset="${stars.img2x}"
+                                alt="Icon star" width="18" height="18">
+                            <img src="${stars.img1x}" 
+                                srcset="${stars.img2x}"
+                                alt="Icon star" width="18" height="18">
+                            <img src="${stars.img1x}" 
+                                srcset="${stars.img2x}"
+                                alt="Icon star" width="18" height="18">
+                        </div>
+                        <div class="reviews__card__text">${review.text}</div>
+                        <div class="reviews__card__author">${review.author}</div>
+                    </div>`)
+    }
+}
