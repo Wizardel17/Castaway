@@ -28,4 +28,37 @@ const episodes = [
     }
 ]
 
+export const reviews = [
+    {
+        text: 'I can’t recommend this podcast enough',
+        author: 'Betty Lacey'
+    },
+    {
+        text: 'Jacob is the best in the business',
+        author: 'Adam Driver'
+    },
+    {
+        text: 'A wealth of audio knowledge',
+        author: 'Marcus Brown'
+    },
+    {
+        text: 'Every episode is a gem!',
+        author: 'Jessica Knowl'
+    },
+    {
+        text: 'Whoa whoa, let me take some notes!',
+        author: 'Scott Adams'
+    },
+    {
+        text: "I’ve upped my game considerably since I started listening",
+        author: 'Steven Blast'
+    }
+]
+
+export const stars = 
+    {
+        img1x: './img/star-1x.png',
+        img2x: './img/star-2x.png'
+    }
+
 export default episodes
