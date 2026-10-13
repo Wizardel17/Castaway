@@ -194,9 +194,9 @@ a {
     content: '';
     position: absolute;
     left: -40px;
-    bottom: 0;
+    bottom: -40px;
     width: 150px;
-    height: 60px;
+    height: 95px;
     background-image: url('./img/effects-1x.png');
     background-repeat: no-repeat;
 }
@@ -233,3 +233,9 @@ a {
     height: 50px;
     padding: 15px;
 }
+
+/* Ревьюс-секция */
+
+/* .reviews {
+    padding-top: 220px;
+} */
