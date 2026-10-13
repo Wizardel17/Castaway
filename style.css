@@ -181,12 +181,24 @@ a {
 }
 
 .subscribe__updates {
+    position: relative;
     display: flex;
     gap: 200px;
     margin-top: 150px;
     padding: 70px 60px;
     background-color: #000000;
     border-radius: 30px;
+}
+
+.subscribe__updates::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    bottom: 0;
+    width: 150px;
+    height: 60px;
+    background-image: url('./img/effects-1x.png');
+    background-repeat: no-repeat;
 }
 
 .subscribe__updates__about__email {
