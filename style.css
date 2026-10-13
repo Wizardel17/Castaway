@@ -236,6 +236,33 @@ a {
 
 /* Ревьюс-секция */
 
-/* .reviews {
-    padding-top: 220px;
-} */
+.reviews {
+    padding-top: 200px;
+}
+
+.reviews__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 15px;
+}
+
+.reviews__card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 280px;
+    padding: 40px 60px;
+    background-color: #000000;
+    border-radius: 32px;
+}
+
+.reviews__card__text {
+    font-size: 36px;
+}
+
+.reviews__card__author {
+    font-size: 24px;
+    opacity: 0.7
+}
