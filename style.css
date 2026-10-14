@@ -17,8 +17,10 @@ a {
     transition: color 0.2s ease
 }
 
-.header__nav__list--item a:hover {
-    color: #118DA8
+.header__nav__list--item, .footer__nav__list, .footer__about__list {
+    a:hover {
+        color: #118DA8
+    }
 }
 
 .container {
@@ -265,4 +267,38 @@ a {
 .reviews__card__author {
     font-size: 24px;
     opacity: 0.7
+}
+
+/*  Подвал сайта */
+
+.footer {
+    padding-block: 200px 100px
+}
+
+.footer__container {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 450px 180px 200px 400px;
+    gap: 15px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.footer__links__socials, .footer__apps {
+    a:not(:last-child) {
+        padding-right: 10px;
+    }
+}
+
+.footer__nav__list, .footer__about__list {
+    margin: 0;
+   list-style: none;
+
+   li:not(:last-child) {
+    padding-bottom: 10px;
+   }
 }
