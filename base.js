@@ -24,7 +24,7 @@ const episodes = [
         text: `Is hardware really worth it when it comes to podcasting? The answer is...it depends. 
             Here’s our reasons on why you might want to consider picking something up.`,
         img1x: './img/sound-1x.png',
-        img2x: './img/souund-2x.png'
+        img2x: './img/sound-2x.png'
     }
 ]
 
