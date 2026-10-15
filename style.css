@@ -582,3 +582,182 @@ a {
         width: auto
     }
 }
+
+/*  Адаптив для телефона */
+
+@media (max-width: 500px) {
+    .welcome__about__text {
+        font-size: 35px;
+
+        span {
+            font-size: 50px
+        }
+    }
+
+    .welcome__container {
+        gap: 20px
+    }
+
+    .welcome__img__man {
+        height: 400px
+    }
+
+    .header {
+        padding-bottom: 10px
+    }
+
+    .episodes {
+        padding-top: 60px
+    }
+
+    .episodes__info {
+        flex-direction: column;
+        gap: 15px
+    }
+
+    .episode {
+        width: 320px
+    }
+
+    .episode__about__title {
+        font-size: 25px
+    }
+
+    .episode__about__text {
+        font-size: 18px
+    }
+
+    .episode__about__btn {
+        width: 120px
+    }
+
+    .subscribe {
+        padding-top: 50px
+    }
+
+    .subscribe__img {
+        width: 400px;
+        height: 400px
+    }
+
+    .subscribe__about__person {
+        font-size: 45px
+    }
+
+    .subscribe__about__text {
+        font-size: 20px
+    }
+
+    .subscribe__updates__about__title {
+        font-size: 50px
+    }
+
+    .footer__container {
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       align-items: center;
+       text-align: center;
+    }
+
+    .footer {
+        padding-top: 70px;
+        padding-left: 0
+    }
+
+    .footer__nav, .footer__about {
+        margin-left: -30px
+    }
+
+    .subscribe__updates::before {
+        content: none
+    }
+
+    .welcome__about__listen {
+        padding-top: 20px
+    }
+}
+
+@media (max-width: 450px) {
+    .welcome__about__text, .subscribe__about__person, .subscribe__updates__about__title, .episodes__info__text {
+        font-size: 25px;
+    }
+
+    .episodes, .reviews, .subscribe {
+        padding-top: 30px
+    }
+
+    .episode__about__title {
+        font-size: 20px
+    }
+
+    .episode__about__text {
+        margin-top: 10px
+    }
+
+    .episode__about__btn {
+        margin-top: 15px;
+        width: 100px
+    }
+
+    .episode {
+        padding: 10px
+    }
+
+    .subscribe__about__text {
+        font-size: 18px
+    }
+
+    .subscribe__img {
+        width: 300px;
+        height: 320px
+    }
+
+    .welcome__img__man {
+        width: 300px;
+        height: 350px
+    }
+
+    .subscribe__updates {
+        padding-block: 30px;
+        width: 280px
+    }
+
+    .form {
+        width: 250px
+    }
+
+    .reviews__card {
+        padding: 40px
+    }
+
+    .reviews__card__text {
+        font-size: 22px
+    }
+}
+
+@media (max-width: 350px) {
+    .header__nav__list {
+        font-size: 16px;
+        gap: 20px
+    }
+
+    .episode {
+        width: 270px
+    }
+
+    .welcome__img__man {
+        width: 280px;
+        height: 320px
+    }
+
+    .subscribe__img {
+        width: 280px;
+        height: 300px
+    }
+
+    .subscribe__updates {
+        width: 255px;
+        padding-inline: 15px
+    }
+}
